@@ -1,0 +1,102 @@
+.form-body {
+    max-width: 322px;
+    margin: 0 auto;
+
+    .form-group {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 30px;
+
+        label {
+            color: $labelActive;
+            font-family: 'Helvetica Neue Light';
+            padding-bottom: 5px;
+        }
+
+        input {
+            border: 1px solid #DEDCDC;
+            display: block;
+            max-width: 320px;
+            height: 40px;
+            border-radius: 5px;
+            outline: none;
+            margin-bottom: 10px;
+
+            &[placeholder] {
+                padding-left: 20px;
+            }
+        }
+
+        .error {
+            border: 1px solid red;
+        }
+
+        select {
+            border: 1px solid #DEDCDC;
+            display: block;
+            width: 320px;
+            height: 40px;
+            border-radius: 5px;
+            outline: none;
+            color: #979797;
+            cursor: pointer;
+
+            &option {
+                padding-left: 20px;
+            }
+        }
+
+        button {
+            max-width: 180px;
+            height: 45px;
+            border: none;
+            outline: none;
+            background: rgba(25, 165, 39, 0.8);
+            color: #ffffff;
+            font-size: 16px;
+            font-family: 'Helvetica Neue Light';
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    }
+
+    .form-group-input {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+
+        .country {
+            margin-right: 20px;
+            max-width: 180px;
+            height: 44px;
+        }
+
+        .index {
+            max-width: 120px;
+        }
+
+        .date {
+            margin-top: 5px;
+            margin-right: 30px;
+            width: 95px;
+        }
+
+        .svv {
+            margin-top: 5px;
+            width: 95px;
+        }
+    }
+
+    .disabled {
+        display: none;
+    }
+}
+
+.form-body_thank {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="form">
+            <div class="form-header" id="form-header">
+                <div class="form-nav">
+                    <p class="header-active-point">Доставка </p>
+                    <span></span>
+                    <p>Оплата</p>
+                </div>
+                <h2>Информация для доставки</h2>
+            </div>
+            <div class="form-body" id="form-body">
+                <div class="" id="windowOne">
+                    <div class="form-group ">
+                        <label for="name">Получатель</label>
+                        <input type="text" placeholder="ФИО" class="form-control" id="name"
+                            aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Адрес</label>
+                        <input type="text" placeholder="ФИО" class="form-control" id="address"
+                            aria-describedby="emailHelp">
+                        <input type="text" placeholder="Адрес" class="form-control" aria-describedby="emailHelp">
+                        <div class="form-group-input">
+                            <select class="country" required>
+                                <option selected="selected" disabled>Страна</option>
+                                <option>country2</option>
+                                <option>country3</option>
+                            </select>
+                            <input class="index" type="text" placeholder="Индекс" class="form-control"
+                                aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                </div>
+                <div class="disabled" id="windowTwo">
+                    <div class="form-group">
+                        <label for="name">Имя на карте</label>
+                        <input type="text" placeholder="Konstantin Ivanov" class="form-control" id="nameCard">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Номер карты</label>
+                        <input type="text" placeholder="XXXX XXXX XXXX XXXX XXXX" class="form-control" id="numberCard">
+                    </div>
+                    <div class="form-group form-group-input">
+                        <div>
+                            <label for="formDate">Срок</label>
+                            <input id="formDate" type="text" placeholder="MM / YY" class="date form-control">
+                        </div>
+                        <div>
+                            <label for="CVV">CVV</label>
+                            <input id='CVV' type="text" placeholder="Индекс" class="svv form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" id="form-btn-group">
+                    <button id="btn" onclick="event.preventDefault()" class="form-btn">Продолжить</button>
+                </div>
+
+
+                <div class="thank disabled" id="thank">
+                    <div>&#10004;</div>
+                    <p>Спасибо!</p>
+                </div>
+
+            </div>
+    </div>
+    </form>
+    </div>
+</body>
+
+</html>
