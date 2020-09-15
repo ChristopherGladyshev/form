@@ -1,5 +1,3 @@
-# full
-## [Реализованное приложение](https://web-mralderson.github.io/test-Webpractik.ru/)
 
 
 Для старта
